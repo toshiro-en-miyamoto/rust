@@ -1,5 +1,5 @@
 # rust
-Rust programming language
+The Rust Programming Language
 
 ## References
 
