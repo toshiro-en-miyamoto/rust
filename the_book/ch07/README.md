@@ -2,7 +2,7 @@
 
 A crate is a binary or library. A package must contain zero or one library crate, and no more. It can contain as many binary crates as you’d like, but it must contain at least one crate (either library or binary).
 
-```
+```sh
 $ cargo new my-project
      Created binary (application) `my-project` package
 $ ls my-project
@@ -42,7 +42,7 @@ Notice that the entire module tree is rooted under the implicit module named `cr
 
 In the crate root file `src/lib.rs`, you can declare the `front_of_house` module whose body will be in `src/front_of_house.rs`.
 
-```
+```rust
 // src/lib.rs
 mod front_of_house;
 
@@ -57,7 +57,7 @@ pub fn eat_at_restaurant() {
 
 Then you define the `front_of_house` module in `src/front_of_house.rs`.
 
-```
+```rust
 // src/front_of_house.rs
 pub mod hosting {
     pub fn add_to_waitlist() {}
